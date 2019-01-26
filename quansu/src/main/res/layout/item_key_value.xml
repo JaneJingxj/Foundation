@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="40dp">
+
+
+    <TextView
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_centerInParent="true"
+        android:background="#fff"
+        android:gravity="center"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:text=""
+        android:textColor="@color/text_hui"
+        android:textSize="15sp"
+
+    />
+
+
+</RelativeLayout>
+

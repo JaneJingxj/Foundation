@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/layoutEmpty"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#80F4F8FB"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linearout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:visibility="visible"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <com.quansu.widget.wave.WaveWaveView
+                android:id="@+id/wavewave"
+                android:layout_width="100px"
+                android:layout_height="40dp"
+                android:layout_gravity="bottom|center"
+                android:layout_marginBottom="1dp"
+                android:paddingLeft="1px"
+                tools:visibility="gone"
+                />
+
+            <ImageView
+                android:id="@+id/t_emptyImageIcon"
+                android:layout_width="113px"
+                android:layout_height="40dp"
+                android:layout_gravity="bottom"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_new_loading_animation"
+                />
+
+        </FrameLayout >
+
+        <TextView
+            android:id="@+id/t_emptyTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="#252627"
+            tools:text="@string/no_data" />
+
+        <TextView
+            android:id="@+id/t_emptyDescTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="#B1B2B3"
+            android:visibility="gone"
+            tools:text="@string/no_data" />
+
+        <Button
+            android:id="@+id/t_emptyButton"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/btn_bg_d"
+            android:text="@string/refresh"
+            android:textAllCaps="false"
+            android:textColor="@color/textColor"
+            android:visibility="gone"
+            tools:visibility="visible" />
+    </LinearLayout >
+
+
+    <LinearLayout
+        android:id="@+id/linearout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/colorBg"
+        android:visibility="gone"
+
+        >
+
+        <com.quansu.widget.baseview.BaseImageView
+            android:id="@+id/img_left"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:padding="14dp"
+            android:src="@drawable/icon_arrow_left"
+            android:visibility="gone"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            >
+        <ImageView
+            android:layout_width="130px"
+            android:layout_height="130px"
+            android:src="@drawable/img_dismiss"
+            />
+
+        <TextView
+            android:id="@+id/tv_daili"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/net_connection_error"
+            android:textColor="#ccc"
+            android:textSize="15px"
+            />
+
+         <Button
+            android:id="@+id/button_again"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:text="@string/reload"
+            android:textColor="#B32A2F"
+            android:textSize="15px"
+            android:textAllCaps="false"
+             />
+
+        </LinearLayout >
+
+    </LinearLayout >
+
+
+
+
+
+
+</LinearLayout >

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/linear"
+              style="?attr/bottomSheetStyle"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              app:layout_behavior="@string/bottom_sheet_behavior" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10px"
+        android:background="@color/white"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            >
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorBg"
+                android:gravity="center"
+                android:padding="12dp"
+                android:text="@string/select_image_upload"
+                android:textColor="@color/text_color"
+                android:textSize="17sp"
+                android:visibility="gone"
+                />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.1dp"
+                android:background="@color/color_line"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_take_pic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center"
+                android:padding="12dp"
+                android:text="@string/camera"
+                android:textColor="@color/textColor"
+                android:textSize="17sp"
+                />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.1dp"
+                android:background="@color/color_lin" />
+
+            <TextView
+                android:id="@+id/tv_choose_pic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center"
+                android:padding="12dp"
+                android:text="@string/album"
+                android:textColor="@color/textColor"
+                android:textSize="17sp"
+                />
+
+        </LinearLayout >
+
+        <com.quansu.widget.LineView
+            android:layout_width="match_parent"
+            android:layout_height="10px"
+            android:background="@color/bg_color"
+            />
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center"
+            android:padding="12dp"
+            android:text="@string/cancel"
+            android:textColor="@color/textColor"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            />
+    </LinearLayout >
+</LinearLayout >

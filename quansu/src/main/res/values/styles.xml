@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" >
+
+    <style name="SwipeBackLayout">
+        <item name="edge_size">50dip</item>
+        <item name="shadow_left">@drawable/shadow_left</item>
+        <item name="shadow_right">@drawable/shadow_right</item>
+        <item name="shadow_bottom">@drawable/shadow_bottom</item>
+    </style>
+
+    <!--侧滑关闭Activity-->
+    <style name="ThemeSwipeBack" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="translucent" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground" >@color/transparent_black</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+
+    <declare-styleable name="RoundProgressBar" tools:ignore="MissingDefaultResource" >
+        <attr name="backColor" format="color|reference"/>
+        <attr name="frontColor" format="color|reference"/>
+        <attr name="textColor" format="color|reference"/>
+        <attr name="textSize" format="dimension" />
+        <attr name="borderWidth" format="dimension" />
+        <attr name="mode">
+            <enum name="STROKE" value="0" />
+            <enum name="STROKE_TEXT" value="1" />
+            <enum name="FILL" value="2" />
+        </attr>
+    </declare-styleable>
+
+</resources>

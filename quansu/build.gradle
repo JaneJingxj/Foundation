@@ -1,0 +1,69 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 28
+
+    defaultConfig {
+        minSdkVersion 19
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    dexOptions {
+        javaMaxHeapSize "4G"
+    }
+    lintOptions {
+        abortOnError false
+    }
+}
+
+
+dependencies {
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+
+    implementation 'com.android.support:design:28.0.0'
+    implementation 'com.android.support:recyclerview-v7:28.0.0'
+    implementation 'com.zhy:autolayout:1.4.5'
+    implementation 'com.google.code.gson:gson:2.8.1'
+    implementation 'com.squareup.retrofit2:retrofit:2.3.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.3.0'
+    implementation 'com.squareup.retrofit2:adapter-rxjava:2.1.0'
+    implementation 'io.reactivex:rxjava:1.2.0'
+    implementation 'io.reactivex:rxandroid:1.2.1'
+    implementation 'com.umeng.analytics:analytics:6.1.2'
+    implementation 'org.dync.kathline:swipebackactivity:1.0.1'
+    implementation 'com.zhy:okhttputils:2.6.2'
+    implementation 'com.daimajia.swipelayout:library:1.2.0'
+    implementation 'com.github.bumptech.glide:glide:4.6.1'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.6.1'
+    implementation 'com.github.bumptech.glide:okhttp3-integration:4.6.1'
+    implementation 'com.github.chrisbanes:PhotoView:2.0.0'
+    implementation 'com.yancy.imageselector:imageselector:1.3.3'
+    implementation 'com.github.promeg:tinypinyin-lexicons-android-cncity:2.0.3'
+    implementation 'com.tbruyelle.rxpermissions:rxpermissions:0.9.0@aar'
+    implementation 'com.jakewharton:butterknife:8.4.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.4.0'
+    compile 'cn.bingoogolapple:bga-swipebacklayout:1.1.9@aar'
+    implementation 'com.jaeger.statusbaruitl:library:1.4.0'
+    implementation 'com.wang.avi:library:2.1.3'
+    //1.5.1
+    implementation 'com.githang:status-bar-compat:0.7'
+    //查看网络请求
+    debugImplementation 'com.readystatesoftware.chuck:library:1.1.0'
+    releaseImplementation 'com.readystatesoftware.chuck:library-no-op:1.1.0'
+
+
+}

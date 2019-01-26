@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" >
+    <!--环形字体尺寸-->
+    <dimen name="round_progress_text_size" tools:ignore="MissingDefaultResource" >15sp</dimen >
+    <!--环形边框宽度-->
+    <dimen name="round_progress_border_width" tools:ignore="MissingDefaultResource" >2dp</dimen >
+</resources >

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+              android:gravity="center"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+            >
+
+    <ProgressBar android:id="@+id/progressBar"
+                 android:layout_width="35dp"
+                 android:layout_height="35dp"
+                 android:indeterminateDrawable="@drawable/progressbarstyle" />
+
+    <!--<com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/avi"
+        android:layout_width="36dp"
+     android:layout_height="36dp"
+    style="@style/AVLoadingIndicatorView"
+    android:visibility="visible"
+     app:indicatorName="LineSpinFadeLoaderIndicator"
+    app:indicatorColor="#979797"
+    />-->
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="加载中..."
+           android:textSize="15sp"
+           android:layout_marginLeft="15dp"
+           android:textColor="#979797"
+           />
+
+
+</LinearLayout>
+
+
+
+
+<!--
+<ProgressBar android:id="@+id/progressBar"
+             xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="36dp"
+             android:layout_height="36dp"
+             android:layout_gravity="center|top"
+             android:layout_marginTop="10dp"
+             android:indeterminateDrawable="@drawable/progressbarstyle" />
+
+-->
+
+

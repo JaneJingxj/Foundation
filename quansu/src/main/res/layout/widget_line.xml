@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16px"
+            android:layout_marginRight="20px"
+            android:textColor="@color/textColor"
+            android:textSize="16px"
+            tools:text="@string/slimming" />
+
+        <EditText
+            android:id="@+id/tv_value"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10px"
+            android:layout_weight="1"
+            android:background="@null"
+            android:ellipsize="end"
+            android:textCursorDrawable="@drawable/edit_cursor_color"
+            android:gravity="right"
+            android:imeOptions="actionNext"
+            android:minWidth="80px"
+            android:singleLine="true"
+            android:textColor="#484848"
+            android:textColorHint="@color/textColorSecondary"
+            android:textSize="16px"
+            tools:text="@string/hite_num_zero" />
+
+        <ImageView
+            android:id="@+id/img_left"
+            android:layout_width="28px"
+            android:layout_height="28px"
+            android:visibility="gone"
+            app:layout_auto_baseheight="width"
+            tools:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/img_right"
+            android:layout_width="28px"
+            android:layout_height="28px"
+            android:layout_marginLeft="10px"
+            android:layout_marginRight="16px"
+            android:visibility="gone"
+            app:layout_auto_baseheight="width"
+            tools:visibility="visible" />
+    </LinearLayout >
+
+    <com.quansu.widget.LineView
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout >
+
+    
