@@ -4,8 +4,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-import com.quansu.utils.UiSwitch;
-import com.quansu.utils.UiUtils;
 
 public class MainActivity extends AppCompatActivity {
 
